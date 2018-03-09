@@ -20,29 +20,29 @@
 		
 		if ($connect->query($query)) {
             return true;
-            echo 'afasdvsaaaasbghd';
+            echo 'connected';
 		} else {
-            echo '3';
+            echo 'fail';
             return false;
 		}
     break;
     }
 
 
-	function registerPlayer($player_name, $team_id, $value, $points) {
+	// function registerPlayer($player_name, $team_id, $value, $points) {
 
-		$query = "INSERT INTO players "
-					."(NAME, TEAM_ID, VALUE, POINTS) "
-					."VALUES ('$player_name', '$team_id', '$value', '$points')";
+	// 	$query = "INSERT INTO players "
+	// 				."(NAME, TEAM_ID, VALUE, POINTS) "
+	// 				."VALUES ('$player_name', '$team_id', '$value', '$points')";
 		
-		if ($connect->query($query)) {
-            return true;
-            echo 'afasdvsaaaasbghd';
-		} else {
-            echo '3';
-            return false;
-		}
-	}
+	// 	if ($connect->query($query)) {
+    //         return true;
+    //         echo 'afasdvsaaaasbghd';
+	// 	} else {
+    //         echo '3';
+    //         return false;
+	// 	}
+	// }
 
 ?>
 <!DOCTYPE HTML>
