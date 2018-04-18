@@ -26,7 +26,7 @@
         case 'GET':
         if(isset($_GET['type']) && $_GET['type']=='all'){
             $response = array();
-            $query = "SELECT * FROM user_vgame order by points";
+            $query = "SELECT * FROM user_vgame order by points desc";
             $res = $connect->query($query);
             while($row=$res->fetch_array()){
                 array_push($response, array('id'=>$row['ID'],'name'=>$row['NAME'],'points'=>$row['POINTS']));
